@@ -1,0 +1,38 @@
+
+*{
+    margin:0;
+    padding:0;
+    color:white;
+}
+#navbar{
+    height:60px;
+    background-color:#0f1111
+}
+button{
+    background-color: #f08804;
+
+}
+#amazon{
+    color:#f08804;
+    font-size:25px;
+}
+a{
+    margin-right:200px;
+    text-decoration:none;
+}
+Input{
+    color:black 
+}
+.Contentbox{
+    height:100px;
+    width:100px;
+    color:Black;
+    border:2px solid black;
+    display:inline-block;
+}
+Footer{
+    color:white;
+    background-color: #0f1111;
+    text-align:center;
+    margin:1000px 0px 0px 0px;
+}
