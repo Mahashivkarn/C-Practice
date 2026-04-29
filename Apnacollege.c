@@ -1,10 +1,9 @@
 #include<stdio.h>
 int main(){
-   int j;
-   printf("Enter a number:");
-   scanf("%d",&j);
-  for(int i=1;i<=10;i++){
-    printf("%d * %d =%d\n",j, i,i*j) ;
-  }
+   float fer,temp;
+   printf("Enter temperature in Fahrenheit:");
+   scanf("%f",&fer);
+   temp=(fer-32)*5/9;
+   printf("Temperature in Celsius is:%f \n",temp);
    return 0;
 }
