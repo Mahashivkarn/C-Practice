@@ -1,12 +1,16 @@
-#box1{
-    height:100px;
-    width:100px;
-    background-color:black;
+*{
+ background-color:black;
+ color:white;   
     
-}
-#box2{
+    
+}#b1{
     height:50px;
-    width:30%;
-    background-color:Red;
-
+    width:50px;
+    background-image: url("Spyde_photo.jpg");
+    background-size:cover;
+    position:fixed;
+    right: 0;
+    top:0;
 }
+
+
