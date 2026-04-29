@@ -1,27 +1,14 @@
 #include<stdio.h>
+#include<math.h>
 int main(){
-  int s1,s2,s3,sum,largeside;
-  printf("Enter three sides of triangle \n");
-  scanf("%d %d %d",&s1,&s2,&s3);
-
-   if(s1>s2){
-    if(s1>s3){
-      sum = s2+s3; largeside=s1;
-    }else{
-      sum=s1+s2; largeside= s3;
-    }
-   } else{
-    if(s2>s3){
-    sum=s1+s3;largeside=s2;
-    } else{
-      sum=s1+s2 ; largeside=s3;
-    }
-   }
-   
-   if(sum>largeside)
-   printf("Triangle is valid\n");
-   else{
-    printf("Triangle is not valid\n");
-   }
-     return 0;
+  float x,y,r,Q;
+  printf("Enter x and y in cartesian form");
+  scanf("%f %f",&x,&y);
+  r=sqrt(pow(x,2) +pow(y,2));
+  Q=atan(y/x);
+  printf("In co-ordinates for they becomes:%f %f",r,Q);
+  return 0;
 }
+  
+  
+
