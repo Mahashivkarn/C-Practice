@@ -1,16 +1,17 @@
 #include<stdio.h>
-#include<math.h>
+// Execution of a loop an unknown times
 int main(){
-  int i,j;
-  for(int i=1;i<=2;i++)
+  char another;
+  int num;
+  do
   {
-    for(int j=1;j<=2;j++)
-    {
-      if(i==j)
-      continue;
-      printf("%d %d\n",i,j);
-    }
-  }
+    printf("Enter a number");
+    scanf("%d",&num);
+    printf("square of %d is %d\n",num,num*num);
+    printf("Wanna Ener anoter number y/n");
+    fflush(stdin);
+    scanf("%c",&another);
+  }while(another=='y');
   return 0;
 }
   

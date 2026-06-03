@@ -1,22 +1,17 @@
 #include <stdio.h>
-// calculating armstrong number between 1 to 500
-int main()
-{
-   int n = 1, i, m, num;
-   while (n < 500)
+// calculating prime number between 1 to 300
+int main(){
+int i=1,n;
+for(i=1;i<=300;i++){
+   n=2;
+   for(n=2;n<i;n++)
    {
-      i = n;
-      num = 0;
-      while (i > 0)
-      {
-         m = i % 10;
-         num = num + m * m * m;
-         i = i / 10;
-      }
-      if(num==n){
-         printf("%d\n",n);
-      }
-      n++;
+      if(i%n==0)
+      break;
    }
+   if(n==i){
+      printf("%d\t",i);
+   }
+}
    return 0;
 }
