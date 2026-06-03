@@ -1,9 +1,16 @@
 #include <stdio.h>
 int main() {
-    int i=0;
-    while(i<=255){
-      printf("%d = %c\n",i,i);
-      i++;
+  int num,i;
+  printf("Enter a number");
+  scanf("%d",&num);
+  i=2;
+  while(i<=num-1){
+    if(num%i==0){
+      printf("Number is not a prime number");
+      break;
     }
-    return 0;
+    i++;
+  }
+  if(i==num)
+  printf("Prime number\n");
   }
