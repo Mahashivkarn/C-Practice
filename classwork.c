@@ -1,12 +1,16 @@
 #include<stdio.h>
 #include<math.h>
 int main(){
-  float x,y,r,Q;
-  printf("Enter x and y in cartesian form");
-  scanf("%f %f",&x,&y);
-  r=sqrt(pow(x,2) +pow(y,2));
-  Q=atan(y/x);
-  printf("In co-ordinates for they becomes:%f %f",r,Q);
+  int i,j;
+  for(int i=1;i<=2;i++)
+  {
+    for(int j=1;j<=2;j++)
+    {
+      if(i==j)
+      continue;
+      printf("%d %d\n",i,j);
+    }
+  }
   return 0;
 }
   
