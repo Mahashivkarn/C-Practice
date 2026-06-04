@@ -1,16 +1,15 @@
 #include <stdio.h>
+// Calculating Factorial
 int main() {
-  int num,i;
-  printf("Enter a number");
-  scanf("%d",&num);
-  i=2;
-  while(i<=num-1){
-    if(num%i==0){
-      printf("Number is not a prime number");
-      break;
-    }
-    i++;
+  int i,j;
+  float fact,sum=0;
+  for(i=1;i<=7;i++)
+  {
+    fact=1.0;
+    for(j=1;j<=i;j++)
+    fact=fact*j;
+    sum=sum+i/fact;
   }
-  if(i==num)
-  printf("Prime number\n");
-  }
+  printf("Sum of series =%f\n",sum);
+  return 0;
+}
