@@ -1,23 +1,19 @@
 #include <stdio.h>
-int main(){
-int i,n,m,p;
-for(i=1;i<=500;i++)
+int main()
 {
-   n=i;
-   for(m=2;m<n;m++)
-   
+ int a,b,c;
+ for(a=1;a<=30;a++)
+ {
+   for(b=a;b<=30;b++)
    {
-      if(i%m==0)
-      
-         break;
-      
-      
-   }
-
-   if(i==m && i!=2)
+      for(c=b;c<=30;c++)
       {
-         printf("%d ",i);
+         if(a*a+b*b==c*c)
+         {
+          printf("Triplets are: %d %d %d\n",a,b,c);
+         }
       }
-}
-return 0;
+   }
+ }
+ return 0;
 }
