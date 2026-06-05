@@ -1,15 +1,18 @@
 #include <stdio.h>
-// Calculating Factorial
-int main() {
-  int i,j;
-  float fact,sum=0;
-  for(i=1;i<=7;i++)
+int main()
+{
+ int year;
+ float population=100000.0;
+  for(year=1;year<=10;year++)
   {
-    fact=1.0;
-    for(j=1;j<=i;j++)
-    fact=fact*j;
-    sum=sum+i/fact;
+    population=population/1.10;
   }
-  printf("Sum of series =%f\n",sum);
+  printf("Population a end of each year :\n\n");
+   for(year=1;year<=10;year++)
+   {
+    population=population*1.10;
+    printf("Year %d: %.0f\n",year,population);
+   }
+ 
   return 0;
 }
