@@ -1,31 +1,21 @@
 #include<stdio.h>
-// Programming for always computer to win in matchsticks game 
+#include<math.h>
+//FInding lograthmic value 
 int main(){
-    int matchsticks=21;
-    int user,compu;
-    printf("The Matchsticks Game \n");
-
-    while(matchsticks >1){
-        printf("\nMatchsticks left=%d\n",matchsticks);
-
-        printf("Pick 1,2,3 or 4 matchsticks");
-        scanf("%d",&user);
-
-    if(user<1 || user>4){
-        printf("Invalid Choise!\n");
-
-        continue;
+    float n,sum=0,a;
+    printf("Enter a number:\n");
+    scanf("%f",&a);
+for(int i=1;i<=7;i++)
+{
+    n=pow((a-1)/a,i);
+    if(i==1){
+        sum =sum +n;
+    }else
+    {
+        sum=sum+n/2;
     }
-    compu=5-user;
-
-    matchsticks=matchsticks-user-compu;
-
-    printf("\nComputer picks %d matchsticks\n",compu);
-    }
-    printf("\nOnly one matchsticks left\n");
-
-    printf("\nYou have to pick it\n");
-
-    printf("\nHehehe You Loose!\n");
-    return 0;
+    
+}
+printf("The answer is : %f",sum);
+return 0;
 }

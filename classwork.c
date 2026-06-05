@@ -1,19 +1,19 @@
 #include<stdio.h>
-// Execution of a loop an unknown times
-int main(){
-  char another;
-  int num;
-  do
+// Program to generate all combinations of 1,2&3
+int main()
+{
+  int i=1,j=2,k=3;
+  for(i=1;i<=3;i++)
   {
-    printf("Enter a number");
-    scanf("%d",&num);
-    printf("square of %d is %d\n",num,num*num);
-    printf("Wanna Ener anoter number y/n");
-    fflush(stdin);
-    scanf("%c",&another);
-  }while(another=='y');
+    for(j=1;j<=3;j++)
+    {
+      for(k=1;k<=3;k++)
+      {
+        printf("%d %d %d\n",i,j,k);
+      }
+    }
+  }
   return 0;
 }
-  
   
 
