@@ -1,18 +1,16 @@
 #include<stdio.h>
-// Program to generate all combinations of 1,2&3
 int main()
 {
-  int i=1,j=2,k=3;
-  for(i=1;i<=3;i++)
+  for (int i=1;i<=50;i++)
   {
-    for(j=1;j<=3;j++)
+    if(i<5)
     {
-      for(k=1;k<=3;k++)
-      {
-        printf("%d %d %d\n",i,j,k);
-      }
+      continue;
+    }if(i%2==0)
+    {
+      continue;
+    }printf("%d\n",i);
     }
-  }
   return 0;
 }
   
