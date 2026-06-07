@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main()
 {
-  for (int i=1;i<=50;i++)
+  int n,sum,fact=1;
+  printf("Enter a number : ");
+  scanf("%d",&n);
+  for (int i=1;i<=n;i++)
   {
-    if(i<5)
-    {
-      continue;
-    }if(i%2==0)
-    {
-      continue;
-    }printf("%d\n",i);
+    
+    fact=fact*i;
+    sum=fact;
     }
+    printf("%d",fact);
   return 0;
 }
   
