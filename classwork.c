@@ -1,29 +1,18 @@
 #include<stdio.h>
-//decelaration 
-void namaste();
-void bonjour();
+
+
+int sum(int x,int y);
 
 int main()
 {
-  char n;
-  printf("Enter I for Indian and F for French\n");
-  scanf("%c",& n);
-  if(n=='I')
-  {
-    namaste();
-  }
-  else
-  {
-    bonjour();
-  }
+  int a,b;
+  printf("Enter number a & b");
+  scanf("%d %d",&a,&b);
+  int s = sum(a,b);
+  printf("Sum is %d\n",s);
+  return 0;
 }
-
-void namaste()
+int sum(int x,int y)
 {
-  printf("Namaste bhau\n");
+  return x+y;
 }
-void bonjour()
-{
-  printf("Bonjour Firangi\n");
-}
-
