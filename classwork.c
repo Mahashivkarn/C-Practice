@@ -1,17 +1,29 @@
 #include<stdio.h>
+//decelaration 
+void namaste();
+void bonjour();
+
 int main()
 {
-  int n,sum,fact=1;
-  printf("Enter a number : ");
-  scanf("%d",&n);
-  for (int i=1;i<=n;i++)
+  char n;
+  printf("Enter I for Indian and F for French\n");
+  scanf("%c",& n);
+  if(n=='I')
   {
-    
-    fact=fact*i;
-    sum=fact;
-    }
-    printf("%d",fact);
-  return 0;
+    namaste();
+  }
+  else
+  {
+    bonjour();
+  }
 }
-  
+
+void namaste()
+{
+  printf("Namaste bhau\n");
+}
+void bonjour()
+{
+  printf("Bonjour Firangi\n");
+}
 
