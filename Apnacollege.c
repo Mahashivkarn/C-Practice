@@ -1,18 +1,14 @@
 #include <stdio.h>
 int main()
 {
- int year;
- float population=100000.0;
-  for(year=1;year<=10;year++)
+  int sum=0;
+ for(int i =1;i<=50;i++)
+ {
+  if(i<5)
   {
-    population=population/1.10;
+    continue;
   }
-  printf("Population a end of each year :\n\n");
-   for(year=1;year<=10;year++)
-   {
-    population=population*1.10;
-    printf("Year %d: %.0f\n",year,population);
-   }
- 
+  sum=sum+i;
+ }printf("Sum is %d\n",sum);
   return 0;
 }
