@@ -1,20 +1,15 @@
 #include<stdio.h>
+#include<math.h>
+void square(int n);
 
-void printtable(int n);
-
-int main()
-{
+int main(){
   int n;
- printf("Enter a number:");
- scanf("%d",&n); 
- 
- printtable(n);
+  printf("Enter a number:");
+  scanf("%d",&n);
+  square(n);
 }
 
-void printtable(int n)
+void square(int n)
 {
-  for(int i=1; i<=10;i++)
-  {
-      printf("%d\n",i*n);
-  }
+  printf("%f\n",pow(n,2));
 }
