@@ -1,18 +1,20 @@
 #include<stdio.h>
 
-
-int sum(int x,int y);
+void printtable(int n);
 
 int main()
 {
-  int a,b;
-  printf("Enter number a & b");
-  scanf("%d %d",&a,&b);
-  int s = sum(a,b);
-  printf("Sum is %d\n",s);
-  return 0;
+  int n;
+ printf("Enter a number:");
+ scanf("%d",&n); 
+ 
+ printtable(n);
 }
-int sum(int x,int y)
+
+void printtable(int n)
 {
-  return x+y;
+  for(int i=1; i<=10;i++)
+  {
+      printf("%d\n",i*n);
+  }
 }
