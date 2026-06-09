@@ -2,15 +2,14 @@
 
   int main()
   {
-    int n,sum=0,nm1=1,nm2;
-    printf("Enter a number");
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++)
-    {
-        printf("%d",sum);
-        nm2=nm1+sum;
-        sum=nm1;
-        nm1=nm2;  
-    }
+    int n=7;
+    int *age=&n;
+    int _thala=*age;
+    
+    //value
+    printf("%d\n",n);
+    printf("%d\n",*age);
+    printf("%d\n",*(&n));
+    
     return 0;
   }
