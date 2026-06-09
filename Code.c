@@ -1,12 +1,16 @@
 #include <stdio.h>
+
+float converttemp(float celsius);
+
 int main()
 {  
-   int n;
-   printf("Enter a number:");
-   scanf("%d",&n);
-   for(int i=10;i>=1;i--)
-   {
-     printf("%d * %d = %d\n",n,i,n*i);
-   }
+   float far = converttemp(0);
+   printf("f:%f",far);
  return 0;
+}
+
+float converttemp(float celsius)
+{
+  float far=celsius*(9.0/5.0) + 32;
+  return far;
 }

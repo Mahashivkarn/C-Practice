@@ -1,17 +1,19 @@
 #include<stdio.h>
+
+int fact(int n);
+
 int main(){
-    int i,j,sum=1;
-    for(i=1;i<=4;i++)
+    printf("Factorial is %d\n",fact(5));
+    return 0;
+ }
+
+ int fact(int n)
+ {
+    if(n==1)
     {
-        for(j=1;j<=4-i;j++)
-        {
-            printf("   ");
-        } for(j=1;j<=i;j++)
-        {
-            printf("%d     ",sum);
-            sum++;
-        }
-        printf("\n");
+        return 1;
     }
-return 0;
-}
+    int factNm1=fact(n-1);
+    int factn=fact(n-1)*n;
+    return factn;
+ }
