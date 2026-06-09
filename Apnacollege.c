@@ -1,14 +1,17 @@
 #include <stdio.h>
+
+int calper(int math,int physics,int chemistry);
+
 int main()
 {
-  int sum=0;
- for(int i =1;i<=50;i++)
- {
-  if(i<5)
-  {
-    continue;
-  }
-  sum=sum+i;
- }printf("Sum is %d\n",sum);
+  int math=90;
+  int physics=85;
+  int chemistry=92;
+  printf("percentage is %d",calper(math,physics,chemistry));
   return 0;
+}
+
+int calper(int math,int physics,int chemistry)
+{
+  return ((math+physics+chemistry)/3);
 }
