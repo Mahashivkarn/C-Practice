@@ -1,33 +1,23 @@
   #include <stdio.h>
   
-  void swap(int a,int b);
-  void _swap(int *a, int *b);
+  int maxi(int *a,int *b);
+
   int main()
   {
-    int x =3,y=5;
-    swap(3,5);
-    printf("swap x=%d y=%d\n",x,y);
-    _swap(&x,&y);
-    printf("swap a=%d b=%d\n",x,y);
+    int a, b;
+    printf("Enter a and b");
+    scanf("%d %d",&a,&b);
+    int max = maxi(&a,&b);
+    printf("From number %d and %d :%d is greater\n",a,b,max);
     return 0;
   }
-  
-  void swap(int a,int b)
-  {
-    int c;
-    c=a;
-    a=b;
-    b=c;
-    printf("swap a=%d b=%d\n",a,b);
-    return a,b;
-  }
 
-  void _swap(int *a, int *b)
+  int maxi(int *a,int *b)
   {
-    int c;
-     c=*a;
-    *a=*b;
-    *b=c;
-    printf("swap a=%d b=%d\n",*a,*b);
-    return *a,*b;
+    if(*a>*b){
+      return *a;
+    }
+    if(*b>*a){
+      return *b;
+    }
   }
