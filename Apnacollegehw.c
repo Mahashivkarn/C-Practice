@@ -2,14 +2,18 @@
 
 int main()
 {
-   int age =22;
+   int age=22;
    int *ptr=&age;
 
-   printf("%p\n",ptr);
+   int _age=24;
+   int *_ptr=&_age;
 
-   ptr++;
+   printf("%p\n",ptr-_ptr);
 
-   printf("%p\n",ptr);
+   _ptr=&age;
+
+   printf("%u Comparision",ptr==_ptr);
+
 
    return 0;
 }
