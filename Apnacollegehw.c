@@ -2,18 +2,21 @@
 
 int main()
 {
-   int age=22;
-   int *ptr=&age;
+    int aadhar[5];
+      
+    //input
+    int *ptr = &aadhar[0];
+    
+    for(int i=0; i<5;i++)
+    {
+      printf("%d index : ",i);
+      scanf("%d",(ptr+i)); 
+    }
 
-   int _age=24;
-   int *_ptr=&_age;
-
-   printf("%p\n",ptr-_ptr);
-
-   _ptr=&age;
-
-   printf("%u Comparision",ptr==_ptr);
-
-
+    // output
+    for(int i=0;i<5;i++)
+    {
+      printf("%d index =%d\n",i,*(ptr+i));
+    }
    return 0;
 }
