@@ -1,12 +1,29 @@
 #include<stdio.h>
 #include<math.h>
 
-int main()
-{
-  int i=10,j=20;
+ int fact(int);
 
-   printf("%d %d %d\n",i,j);
-   printf("%d",i,j);
+ int main()
+ {
+  int a,b;
+   
+  printf("Enter a number for Factorial:");
+  scanf("%d",&a);
+   b =fact(a);
 
+   printf("Factorial of %d = %d\n",a,b);
+    
    return 0;
-}
+
+ }
+
+ int fact(int x)
+ {
+  int y=1;
+  for(int i=1;i<=x;i++)
+  {
+    y=y*i;
+
+  }
+   return (y);
+ }
