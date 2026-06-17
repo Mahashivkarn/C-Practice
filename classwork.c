@@ -1,29 +1,34 @@
 #include<stdio.h>
-#include<math.h>
 
- int fact(int);
+int roman(int,int,char);
 
  int main()
  {
-  int a,b;
-   
-  printf("Enter a number for Factorial:");
-  scanf("%d",&a);
-   b =fact(a);
+   int yr;
+   printf("\nEnter a year:");
+   scanf("%d",&yr);
 
-   printf("Factorial of %d = %d\n",a,b);
-    
-   return 0;
-
+  yr=roman(yr,1000,'m');
+  yr=roman(yr,500,'d');
+  yr=roman(yr,100,'c');
+  yr=roman(yr,50,'l');
+  yr=roman(yr,10,'x');
+  yr=roman(yr,5,'v');
+  yr=roman(yr,1,'i');
+  roman(yr,1,'i');
+  return 0;
  }
 
- int fact(int x)
- {
-  int y=1;
-  for(int i=1;i<=x;i++)
-  {
-    y=y*i;
+ int roman(int y,int k,char ch)
+{
+    int i,j;
 
-  }
-   return (y);
- }
+    j = y/k;
+
+    for(i=1;i<=j;i++)
+    {
+        printf("%c",ch);
+    }
+
+    return y%k;
+}
