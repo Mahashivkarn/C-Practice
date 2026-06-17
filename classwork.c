@@ -1,15 +1,15 @@
 #include<stdio.h>
+#include<math.h>
 
 int main()
 {
- int marks[3];
- printf("Enter Maths marks");
- scanf("%d",&marks[0]);
- printf("Enter chemistry marks");
- scanf("%d",&marks[1]);
- printf("Enter physics marks");
- scanf("%d",&marks[2]);
- 
- printf("Phy =%d\n chem=%d\n math=%d",marks[0],marks[1],marks[2]);
+  float a=0.5;
+  float w,x,y,z;
+  w= sin (a);
+  x=cos (a);
+  y=tan (a);
+  z=pow (a,2);
+
+  printf("%f %f %f %f \n",w,x,y,z);
   return 0;
 }
