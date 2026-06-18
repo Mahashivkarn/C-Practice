@@ -1,27 +1,31 @@
-  #include <stdio.h>
-  
-   int year(int);
+#include<stdio.h>
 
+void pf(int n);
 
-   int main()
-   {
-    int a,n;
-    
-    printf("\nEnter a Year:\n");
-    scanf("%d",&a);
+int main()
+{
+  int n;
+  printf("Enter a number:");
+  scanf("%d",&n);
 
-    n=year(a);
-    
-    return 0;
-   }  
+  printf("Factorial Of number are\n");
+  pf(n);
+  return 0;
+}
 
-   int year(int x)
-   {
-    if((x%400==0)||(x%100 !=0 && x%4==0))
+void pf(int n)
+{
+   int i =2;
+
+    while(n>1)
     {
-      return printf("Leap Year\n");
-    } else
-    {
-      return printf("not a Leap Year\n");
+      if(n%i==0)
+      {
+        printf("%d\n",i);
+        n=n/i;
+              }else
+              {
+                i++;
+              }    
+          }   
     }
-   }
