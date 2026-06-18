@@ -1,11 +1,20 @@
 #include<stdio.h>
 
+void swap(int x, int y);
+
 int main()
 {
-    int *alpha;
-    char *ch;
-    float *s;
-
-    printf("%d %d %d",sizeof(alpha),sizeof(ch),sizeof(s));
+    int a=10,b=20;
+    swap(a,b);
+    printf("a=%d b=%d\n",a,b);
     return 0;
+}
+
+void swap(int x,int y)
+{
+  int t;
+  t=x;
+  x=y;
+  y=t;
+  printf("X=%d Y=%d\n",x,y);
 }
