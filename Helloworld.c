@@ -1,19 +1,16 @@
 #include<stdio.h>
 
-int fact(int n);
-
-int main(){
-    printf("Factorial is %d\n",fact(5));
+int main()
+{
+    int i=3;
+    int *j;
+    j=&i;
+    printf("Address of i =%u\n",&i);
+    printf("Address of i=%u\n",j);
+    printf("Address of j=%u\n",&j);
+    printf("Value of j=%u\n",j);
+    printf("Value of i=%d\n",i);
+    printf("Value of i=%d\n",*(&i));
+    printf("Value of i=%d\n",*j);
     return 0;
- }
-
- int fact(int n)
- {
-    if(n==1)
-    {
-        return 1;
-    }
-    int factNm1=fact(n-1);
-    int factn=fact(n-1)*n;
-    return factn;
- }
+}
