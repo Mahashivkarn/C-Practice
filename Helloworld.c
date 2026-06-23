@@ -1,13 +1,16 @@
 #include<stdio.h>
 
+void fun(int * ,int *);
 int main()
 {
-  float a=3.14;
-  float *ptr= &a;
-  float **dptr= &ptr;
-  
-  printf("Addres of a ptr dptr =%p %p %p",&a,&ptr,&dptr);
-  printf("\n%p %p\n",ptr,dptr);
-  printf("\n%f %f %f\n",a,*ptr,**dptr);
+  int i=5,j=2;
+  fun(&i,&j);
+  printf("%d %d",i,j);
   return 0;
+}
+
+void fun(int *x,int *y)
+{
+  *x=*x* *x;
+  *y=*y * *y;
 }
