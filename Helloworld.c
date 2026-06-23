@@ -1,22 +1,21 @@
 #include<stdio.h>
 
-void shift(int *,int *, int *);
+void shift(float *,float *,float *,float  *);
 int main()
 {
-  int x=5,y=8,z=10;
+  float kg,gm,ton,pound;
+  printf("Enter the amount of Kg to Convert:");
+  scanf("%f",&kg);
 
-  printf("x=%d y=%d z=%d\n",x,y,z);
-  shift(&x,&y,&z);
-  
-  printf("y=%d z=%d x=%d",y,z,x);
+  shift(&kg,&gm,&ton,&pound);
+
+  printf(" in Kg=%f\n in Gram=%f\n in Ton=%f\n in Pound=%f\n",kg,gm,ton,pound);
   return 0;
 }
 
-void shift(int *a,int *b,int *c)
+void shift(float *kg,float *a,float *b,float *c)
 {
-  int d;
-  d=*a;
-  *a=*c;
-  *c=*b;
-  *b=d;
+  *a=*kg*1000;
+  *b=*kg/1000;
+  *c=*kg * 2.204;
 }
