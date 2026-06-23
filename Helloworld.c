@@ -1,20 +1,13 @@
 #include<stdio.h>
 
-void swap(int *, int *);
-
 int main()
 {
-    int a=10,b=20;
-    swap(&a,&b);
-    printf("a=%d b=%d\n",a,b);
-    return 0;
-}
-
-void swap(int *x,int *y)
-{
-  int t;
-  t=*x;
-  *x=*y;
-  *y=t;
-  printf("X=%d Y=%d\n",*x,*y);
+  float a=3.14;
+  float *ptr= &a;
+  float **dptr= &ptr;
+  
+  printf("Addres of a ptr dptr =%p %p %p",&a,&ptr,&dptr);
+  printf("\n%p %p\n",ptr,dptr);
+  printf("\n%f %f %f\n",a,*ptr,**dptr);
+  return 0;
 }
