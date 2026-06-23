@@ -1,24 +1,31 @@
 #include<stdio.h>
 #include<math.h>
 
-int fun(int*,float*,double*);
+int fun(float,int ,int,float*,int*);
 
 int main()
 {
-  int sum;
-  float avg;
-  double std;
-  fun(&sum, &avg,&std);
-  printf("%d %f %lf",sum,avg,std);
-  return 0;
+    float a;
+    int b,num,fact;
+    float n;
+    printf("Enter number a & b to calculate a to the power of b");
+    scanf("%f %d",&a,&b);
+    printf("Enter a number whose facotrial is to be calculated");
+    scanf("%d",&num);
+    fun(a,b,num,&n,&fact);
+    printf("power=%f Factorial=%d",n,fact);
+    return 0;
 }
 
-int fun(int *x,float *y,double *z)
+int fun(float x,int y,int z,float *n,int *fact)
 {
-  int n1,n2,n3,n4,n5;
-  printf("\n Enter 5 number : ");
-  scanf("%d %d %d %d %d",&n1,&n2,&n3,&n4,&n5);
-  *x=n1+n2+n3+n4+n5;
-  *y=(n1+n2+n4+n5)/5;
-  *z=sqrt((pow((n1-*y),2.0))+pow((n2-*y),2.0) +pow((n3-*y),2.0) +pow((n4-*y),2.0)+pow((n5-*y),4));
+ float a=1;
+ for(int i=1;i<=y;i++)
+ 
+    a=a*x;
+    *n=a;
+    a=1;
+    for(int i=1;i<=z;i++)
+    a=a*i;
+    *fact=a;
 }
