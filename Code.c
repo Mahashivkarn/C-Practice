@@ -1,26 +1,28 @@
 #include<stdio.h>
 #include<math.h>
 
-int rec(int );
+int recu(int );
 
 int main()
 {
     int a,fact;
-    printf("Enter a number:");
+    printf("Enter a 5 digit number:");
     scanf("%d",&a);
-    fact = rec(a);
-    printf("Factorial is %d\n",fact);
+    fact = recu(a);
+    printf("sum is %d\n",fact);
     return 0;
 }
 
-int rec(int n)
+int recu(int n)
 {
-    int f;
-    if(n==1)
-    return(1);
-    else
+    int j=0,k;
+    if(n!=0)
     {
-      f=n*rec(n-1);
+        j=n%10;
+        k=j+recu(n/10);
+    }else{
+        return 0;
     }
-    return f;
+    return k;
+    
 }
