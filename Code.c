@@ -1,28 +1,30 @@
 #include<stdio.h>
-#include<math.h>
 
-int recu(int );
+void pf(int,int );
+
 
 int main()
 {
-    int a,fact;
-    printf("Enter a 5 digit number:");
-    scanf("%d",&a);
-    fact = recu(a);
-    printf("sum is %d\n",fact);
+   int a,b;
+   printf("Enter a number");
+   scanf("%d",&a);
+   printf("Prime factor of numbers are:");
+   pf(a,2);
     return 0;
 }
 
-int recu(int n)
-{
-    int j=0,k;
-    if(n!=0)
+void pf(int x,int y)
+{ 
+    if(y<=x)
+
     {
-        j=n%10;
-        k=j+recu(n/10);
-    }else{
-        return 0;
-    }
-    return k;
-    
+        if(x%y==0)
+        {
+            printf("%d\n",y);
+            x=x/y;
+        }else
+        {
+            y++;
+        }
+    }pf(x,y);
 }
