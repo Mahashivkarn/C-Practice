@@ -1,30 +1,19 @@
 #include<stdio.h>
 
-void pf(int,int );
-
-
 int main()
 {
-   int a,b;
-   printf("Enter a number");
-   scanf("%d",&a);
-   printf("Prime factor of numbers are:");
-   pf(a,2);
-    return 0;
-}
+    int a[5]={10,20,30,40,50};
+     int key=40;
+     int i;
 
-void pf(int x,int y)
-{ 
-    if(y<=x)
-
-    {
-        if(x%y==0)
+     for(i=0;i<=5;i++)
+     {
+        if(a[i]==key)
         {
-            printf("%d\n",y);
-            x=x/y;
-        }else
-        {
-            y++;
+            printf("Element found at index %d",i);
+            return 0;
         }
-    }pf(x,y);
+     }  
+     printf("Not Found");
+     return 0;
 }
