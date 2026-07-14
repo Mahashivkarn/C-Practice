@@ -1,5 +1,4 @@
-import pyttsx3
+a=1
+b=2
 
-engine = pyttsx3.init()
-engine.say("Welcome Boss. Javis this side ,How can I Help you?")
-engine.runAndWait()
+print(a+b)
