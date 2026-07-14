@@ -1,4 +1,7 @@
-a=1
-b=2
+a =int(input("Enter number a:"))
 
-print(a+b)
+z=int(input("Enter number z:"))
+
+remainder=a%z
+
+print(remainder)
