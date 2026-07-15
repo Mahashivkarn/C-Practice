@@ -1,4 +1,4 @@
-a=int(input("Enter a number"))
-b=int(input("Enter b number"))
+name='Dhruv'
 
-print("Average of two number is",(a+b)/2)
+print(len(name))
+print(name.endswith("Dhruv"))
