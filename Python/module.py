@@ -1,7 +1,3 @@
-a =int(input("Enter number a:"))
+tupel=(2,4,7,230,2,2.34,"Dhruv")
 
-z=int(input("Enter number z:"))
-
-remainder=a%z
-
-print(remainder)
+print(tupel.index('Dhruv'))

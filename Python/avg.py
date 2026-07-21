@@ -1,3 +1,6 @@
-a ="Dhruv is a good boy \nnot a bad boy"
+friends =["Apple","Rohan", 5,3.14, False , "dhruv","Yash" ]
 
-print(a)
+print(friends[1])
+
+friends.append("Vir")
+print(friends)
