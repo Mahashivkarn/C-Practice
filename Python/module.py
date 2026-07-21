@@ -1,3 +1,7 @@
-tupel=(2,4,7,230,2,2.34,"Dhruv")
+l ={"dhruv" : 100,
+    "Yash" :95,
+     "Vir":90
+     }
+l.update({'dhruv':99})
 
-print(tupel.index('Dhruv'))
+print(l['dhruv'])
