@@ -1,4 +1,3 @@
-name='Dhruv'
+a ="Dhruv is a good boy \nnot a bad boy"
 
-print(len(name))
-print(name.endswith("Dhruv"))
+print(a)
