@@ -1,12 +1,5 @@
-#Q1
+s1={1,2,36,5,46,865,9}
+s2={2,23,352,45,1,346,9,4}
 
-list1=input("Enter 1 fruit in a List\n ")
-list2=input("Enter 2 fruit in a List\n ")
-list3=input("Enter 3 fruit in a List\n ")
-list4=input("Enter 4 fruit in a List\n ")
-list5=input("Enter 5 fruit in a List\n ")
-list6=input("Enter 6 fruit in a List\n ")
-list7=input("Enter 7 fruit in a List\n ")
-list =[list1,list2,list3,list4,list5,list6,list7]
-print(list)
-print(type(list))
+print(s1.union(s2))
+print(s1.intersection(s2))
