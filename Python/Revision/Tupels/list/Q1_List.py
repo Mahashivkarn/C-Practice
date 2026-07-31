@@ -1,6 +1,3 @@
-fruits = ["apple", "banana", "cherry"] 
+l=[i for i in  range(1,11)]
 
-print(fruits[0])
-fruits[1] = "orange"
-print(fruits)
-print(len(fruits))
+print(l[-3:])
