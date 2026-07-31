@@ -1,0 +1,16 @@
+*{
+ background-color:black;
+ color:white;   
+    
+    
+}#b1{
+    height:50px;
+    width:50px;
+    background-image: url("Spyde_photo.jpg");
+    background-size:cover;
+    position:fixed;
+    right: 0;
+    top:0;
+}
+
+
