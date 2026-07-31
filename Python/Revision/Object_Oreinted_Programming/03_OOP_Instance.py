@@ -15,3 +15,6 @@ class employee:
 e1= employee(34500,"Jhon Wick",4,"Asus")
 # print(e1.get_salary())
 print(e1.company) #It will always print Instance attribute if present otherwise it will print class attribute.
+print(employee.company) #This will always print CLass Atrribute.
+#object introspection
+print(dir(e1))
